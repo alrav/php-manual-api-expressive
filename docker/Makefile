@@ -1,16 +1,16 @@
 build:
 	docker-compose build
 
-php:
+start:
 	docker-compose up php
 
-php-shell:
+shell:
 	docker-compose run php bash
 
-php-test:
+test:
 	docker-compose run php composer run-script test
 
-php-cs-check:
+phpcs:
 	docker-compose run php composer run-script cs-check
 
 phpdoc:
