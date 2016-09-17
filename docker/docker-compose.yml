@@ -1,0 +1,7 @@
+version: '2'
+services:
+    phpdoc:
+        build:
+          context: ./conf/phpdoc
+        volumes:
+          - ../data/phpdoc:/home/phpdoc/output
