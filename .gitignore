@@ -1,2 +1,7 @@
 .idea
+clover.xml
+coveralls-upload.json
+phpunit.xml
+
 data/
+vendor/
