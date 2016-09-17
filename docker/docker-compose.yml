@@ -1,7 +1,15 @@
 version: '2'
 services:
-    phpdoc:
-        build:
-          context: ./conf/phpdoc
-        volumes:
-          - ../data/phpdoc:/home/phpdoc/output
+  php:
+    build:
+      context: ./conf/php
+    ports:
+      - 8080:8080
+    volumes:
+      - ../:/code
+    working_dir: /code
+  phpdoc:
+    build:
+      context: ./conf/phpdoc
+    volumes:
+      - ../data/phpdoc:/home/phpdoc/output
